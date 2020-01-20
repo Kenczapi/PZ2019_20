@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/desert"
+    tools:context=".activity_profile">
+
+    <LinearLayout
+        android:id="@+id/linearLayoutSettings1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <TextView
+            android:id="@+id/textViewNick"
+            android:layout_width="240dp"
+            android:gravity="center"
+            android:layout_height="70dp"
+            android:layout_marginTop="200dp"
+            android:layout_gravity="center"
+            android:text="TextView"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:background="@drawable/button"
+            android:typeface="serif"
+            android:layout_marginBottom="10dp"/>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <EditText
+                android:id="@+id/editTextNick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="@string/sNick" />
+
+
+            <Button
+                android:id="@+id/buttonOk"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:background="@drawable/button3"
+                android:layout_weight="1"
+                android:text="OK"
+                android:onClick="changeNick"/>
+        </LinearLayout>
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ScrollView01"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/imageButtonProfilePoland"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/poland" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonProfileGermany"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/england" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonProfileEngland"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/germany" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/imageButtonProfilePoland2"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/chile" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonProfileGermany2"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/argentina" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonProfileEngland2"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/brazil" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/imageButtonProfilePoland3"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/belgium" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonProfileGermany3"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/usa" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonProfileEngland3"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/australia" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/imageButtonProfilePoland4"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/austria" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonProfileGermany4"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/canada" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonProfileEngland4"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/czechrepublic" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/imageButtonProfilePoland5"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/greece" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonProfileGermany5"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/france" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonProfileEngland5"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/denmark" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageButton
+                            android:id="@+id/imageButtonProfilePoland51"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/finland" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonProfileGermany51"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/portugal" />
+
+                        <ImageButton
+                            android:id="@+id/imageButtonProfileEngland51"
+                            android:layout_width="150dp"
+                            android:layout_height="80dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/russia" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

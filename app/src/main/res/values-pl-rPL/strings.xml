@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Helikoptery</string>
+    <string name="play">Graj</string>
+    <string name="profile">Profil</string>
+    <string name="settings">USTAWIENIA</string>
+    <string name="messageQuit">Czy napewno chcesz opuścić rozgrywkę?</string>
+    <string name="sNo">Nie</string>
+    <string name="sYes">Tak</string>
+    <string name="sSound">dźwięk</string>
+    <string name="sMusic">muzyka</string>
+    <string name="sNick">Nazwa</string>
+    <string name="sGo">Graj!</string>
+    <string name="sRandom">LOSUJ</string>
+    <string name="accesBluetooth">Urządenie nie obsługuje Bluetoo</string>
+    <string name="vibration">wibracje</string>
+</resources>

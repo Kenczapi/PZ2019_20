@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Helikoptery</string>
+
+    <string name="title_activity_temp">temp</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="settings">SETTINGS</string>
+    <string name="profile">PROFILE</string>
+    <string name="play">Play</string>
+    <string name="messageQuit">Are you sure you want to quit?</string>
+    <string name="sNo">No</string>
+    <string name="sYes">Yes</string>
+    <string name="sSound">sounds</string>
+    <string name="sMusic">music</string>
+    <string name="sNick">Nick:</string>
+    <string name="sGo">GO!</string>
+    <string name="sRandom">RANDOM</string>
+    <string name="accesBluetooth">Device doesn\'t support Bluetooth</string>
+    <string name="vibration">vibration</string>
+    <string name="hang">Hang</string>
+
+</resources>
