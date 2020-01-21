@@ -96,6 +96,7 @@ public class GameEngine {
 
         if( bombNotFound == 0 && notRevealed == 0 ){
             Toast.makeText(context,"Game won", Toast.LENGTH_SHORT).show();
+            return true;
         }
         return false;
     }

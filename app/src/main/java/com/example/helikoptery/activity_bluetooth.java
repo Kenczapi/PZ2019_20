@@ -8,11 +8,23 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.TextView;
 
 public class activity_bluetooth extends AppCompatActivity {
 
-    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_mineswepper);
+
+        Log.e("MainActivity","onCreate");
+        GameEngine.getInstance().createGrid(this);
+
+    }
+
+
+   /* @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bluetooth);
@@ -49,5 +61,5 @@ public class activity_bluetooth extends AppCompatActivity {
     public void discoverDevices(View view) {
         BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         bluetoothAdapter.startDiscovery();
-    }
+    }*/
 }

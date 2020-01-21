@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
                 android:layout_weight="1"
-                android:background="@drawable/buttonpvp"
+                android:background="@drawable/buttonhelicopters"
                 android:onClick="goToGameFieldPvp" />
 
             <ImageButton
@@ -38,7 +38,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@drawable/buttoncomputer"
+                android:background="@drawable/buttontictactoe"
                 android:onClick="goToGameFieldPvc" />
         </LinearLayout>
 
@@ -65,8 +65,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:onClick="goToGameFieldBluetooth"
-                android:background="@drawable/buttonbluetooth" />
+                android:background="@drawable/buttonsaper"
+                android:onClick="goToGameFieldBluetooth" />
         </LinearLayout>
 
     </LinearLayout>

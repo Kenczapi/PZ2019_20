@@ -30,10 +30,11 @@ public class activity_selectGameMode extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_select_game_mode);
 
+
         imageButtonBluetooth = findViewById(R.id.bBluetooth);
-        imageButtonBluetooth.setBackgroundResource(R.drawable.animationbluetooth);
-        animBluetooth = (AnimationDrawable) imageButtonBluetooth.getBackground();
-        animBluetooth.start();
+        imageButtonBluetooth.setBackgroundResource(R.drawable.buttonsaper);
+        //animBluetooth = (AnimationDrawable) imageButtonBluetooth.getBackground();
+        //animBluetooth.start();
 
         imageButtonWifi = findViewById(R.id.bWiFi);
         imageButtonWifi.setBackgroundResource(R.drawable.animationwifi);
@@ -44,7 +45,7 @@ public class activity_selectGameMode extends AppCompatActivity {
 
     public void goToGameFieldPvp(View view) {
         final ImageButton imageButton = findViewById(R.id.bPvp);
-        imageButton.setBackgroundResource(R.drawable.buttonpvpclick);
+        //imageButton.setBackgroundResource(R.drawable.buttonpvpclick);
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -56,7 +57,7 @@ public class activity_selectGameMode extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        imageButton.setBackgroundResource(R.drawable.buttonpvp);
+                        imageButton.setBackgroundResource(R.drawable.buttonhelicopters);
                     }
                 });
                 try {
@@ -77,7 +78,7 @@ public class activity_selectGameMode extends AppCompatActivity {
 
     public void goToGameFieldPvc(View view) {
         final ImageButton imageButton = findViewById(R.id.bComputer);
-        imageButton.setBackgroundResource(R.drawable.buttoncomputerclick);
+        imageButton.setBackgroundResource(R.drawable.buttontictactoe);
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -89,7 +90,7 @@ public class activity_selectGameMode extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        imageButton.setBackgroundResource(R.drawable.buttoncomputer);
+                        //imageButton.setBackgroundResource(R.drawable.buttoncomputer11);
                     }
                 });
                 try {
@@ -107,16 +108,12 @@ public class activity_selectGameMode extends AppCompatActivity {
             }
         }).start();
 
-
     }
 
     public void goToGameFieldWiFi(View view) {
 
-        Intent intent = new Intent(context, activity_minesweeper.class);
-        startActivity(intent);
-
         imageButtonWifi = findViewById(R.id.bWiFi);
-        imageButtonWifi.setBackgroundResource(R.drawable.buttonwificlick);
+        //imageButtonWifi.setBackgroundResource(R.drawable.buttonwificlick);
 
         new Thread(new Runnable() {
             @Override
@@ -126,28 +123,23 @@ public class activity_selectGameMode extends AppCompatActivity {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-
-                try {
-                    Thread.sleep(DELAYED_TIME);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Intent intent = new Intent(context, activity_minesweeper.class);
-                        startActivity(intent);
+
+                        imageButtonWifi.setBackgroundResource(R.drawable.animationwifi);
+                        animWiFi = (AnimationDrawable) imageButtonWifi.getBackground();
+                        animWiFi.start();
                     }
                 });
             }
         }).start();
-
     }
 
     public void goToGameFieldBluetooth(View view) {
 
         imageButtonBluetooth = findViewById(R.id.bBluetooth);
-        imageButtonBluetooth.setBackgroundResource(R.drawable.buttonbluetoothclick);
+        //imageButtonBluetooth.setBackgroundResource(R.drawable.buttonbluetoothclick);
         new Thread(new Runnable() {
             @Override
             public void run() {
@@ -159,13 +151,15 @@ public class activity_selectGameMode extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        imageButtonBluetooth.setBackgroundResource(R.drawable.animationbluetooth);
-                        animBluetooth = (AnimationDrawable) imageButtonBluetooth.getBackground();
-                        animBluetooth.start();
+                        //imageButtonBluetooth.setBackgroundResource(R.drawable.animationbluetooth);
+                        //animBluetooth = (AnimationDrawable) imageButtonBluetooth.getBackground();
+                        //animBluetooth.start();
                     }
                 });
             }
         }).start();
+
+
 
         // Sprawdzenie czy urządenie obsługuje Bluetooth
         BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
